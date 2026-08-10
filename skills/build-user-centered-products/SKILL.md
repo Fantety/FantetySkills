@@ -1,6 +1,6 @@
 ---
 name: build-user-centered-products
-description: Apply user-centered product reasoning while designing, implementing, modifying, or reviewing user-facing software. Use for product and software development tasks where Codex must translate requests into coherent UX, prioritize the primary user goal, reason across interface states and transitions, make proportional value-versus-complexity tradeoffs, choose context-appropriate behavior, and validate the end-to-end experience instead of satisfying requirements only literally or locally.
+description: Apply user-centered product reasoning while designing, implementing, modifying, or reviewing user-facing software. Use for product and software development tasks where must translate requests into coherent UX, prioritize the primary user goal, reason across interface states and transitions, make proportional value-versus-complexity tradeoffs, choose context-appropriate behavior, and validate the end-to-end experience instead of satisfying requirements only literally or locally.
 ---
 
 # Build User-Centered Products
