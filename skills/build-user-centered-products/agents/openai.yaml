@@ -1,0 +1,4 @@
+interface:
+  display_name: "用户中心产品开发"
+  short_description: "从用户目标、任务主次、状态变化与恢复路径出发设计和实现软件产品"
+  default_prompt: "Use $build-user-centered-products to turn this request into a coherent, user-centered product experience."
