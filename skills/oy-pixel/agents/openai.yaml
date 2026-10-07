@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Art and Animation"
+  short_description: "Draw pixel artwork, sprites, effects, and animations"
+  default_prompt: "Use $oy-pixel to create the requested pixel artwork, inspect the result, and deliver PNG, GIF, or sprite sheets."

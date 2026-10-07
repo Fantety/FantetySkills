@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用海报制作"
+  short_description: "从需求梳理、信息层级、视觉构图到成品导出的专业海报制作流程"
+  default_prompt: "使用 $create-posters 将我的文案和图片制作成一张专业、清晰且可导出的海报。"

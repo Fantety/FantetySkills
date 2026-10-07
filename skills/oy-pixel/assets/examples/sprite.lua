@@ -1,0 +1,16 @@
+-- A compact example of a reusable silhouette driven by timeline phase.
+local ink, shade, leaf, light, gleam = pal(1), pal(2), pal(3), pal(4), pal(5)
+local bob = math.floor(1.5 * math.sin(phase * 2 * math.pi) + 0.5)
+local cx, cy = 16, 17 + bob
+canvas.ellipsefill(cx, cy, 9, 8, ink)
+canvas.ellipsefill(cx, cy - 1, 8, 7, shade)
+canvas.ellipsefill(cx - 1, cy - 2, 7, 5, leaf)
+canvas.ellipsefill(cx - 3, cy - 4, 3, 2, light)
+canvas.rectfill(cx - 5, cy - 3, 2, 3, ink)
+canvas.rectfill(cx + 3, cy - 3, 2, 3, ink)
+canvas.pset(cx - 5, cy - 3, gleam)
+canvas.pset(cx + 3, cy - 3, gleam)
+canvas.line(cx - 1, cy + 1, cx + 1, cy + 1, ink)
+canvas.line(cx, cy - 8, cx + 2, cy - 11, ink)
+canvas.ellipsefill(cx + 4, cy - 11, 3, 1, leaf)
+canvas.line(cx + 2, cy - 11, cx + 5, cy - 11, light)

@@ -1,0 +1,19 @@
+# Local environments and generated Python files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Rust build output
+target/
+
+# Keep the distributed Windows renderer; ignore locally built platform binaries
+skills/*/scripts/bin/*
+!skills/*/scripts/bin/oy-pixel-render.exe
+!skills/*/scripts/bin/source.sha256
+
+# Generated artwork and operating-system metadata
+/output/
+.DS_Store
+Thumbs.db

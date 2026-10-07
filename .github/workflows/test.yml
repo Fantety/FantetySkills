@@ -1,0 +1,32 @@
+name: Validate skills and test renderer
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Validate all skills
+        run: python scripts/validate_skills.py
+      - name: Check renderer
+        run: python skills/oy-pixel/scripts/render.py --check
+      - name: Test rendering and standalone installation
+        run: python tests/oy-pixel/test_render.py
+      - name: Test Rust engine
+        run: cargo test --locked --manifest-path skills/oy-pixel/scripts/engine/Cargo.toml
+      - name: Check Rust formatting
+        run: cargo fmt --manifest-path skills/oy-pixel/scripts/engine/Cargo.toml -- --check

@@ -1,0 +1,6 @@
+{
+  "width": 32,
+  "height": 32,
+  "palette": ["#172038", "#346856", "#62AB46", "#C7D859", "#FFF3CD"],
+  "layers": [{"name": "Sprout", "script": "sprite.lua"}]
+}
