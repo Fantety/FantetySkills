@@ -60,4 +60,4 @@ Issues and pull requests describing recurring problems and reusable solutions ar
 
 ## License
 
-Unless otherwise stated, this repository is licensed under [Apache License 2.0](./LICENSE). `skills/oy-pixel/` and its rendering tests in `tests/oy-pixel/` are licensed under [MIT](./skills/oy-pixel/LICENSE). See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for dependency and distribution notices.
+This repository is licensed under the [MIT License](./LICENSE). See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for third-party dependency licenses and distribution notices.

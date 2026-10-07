@@ -1,5 +1,6 @@
 ---
 name: create-posters
+license: MIT
 description: Create or revise professional single-page posters from copy, images, logos, QR codes, and delivery constraints, including fixed-canvas HTML posters and export-ready PNG/PDF layouts. Use when Codex needs to make a commission sheet, event poster, promotional graphic, information poster, social-media poster, key visual, or similar one-page visual; improve poster hierarchy, readability, image presentation, contact placement, or prepare HTML for image export. Do not use for ordinary responsive websites or multi-slide presentations.
 ---
 

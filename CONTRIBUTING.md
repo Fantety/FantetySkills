@@ -8,7 +8,7 @@ Share the task or recurring problem that motivates a skill, the behavior it shou
 - Keep every skill independently installable. Put required helpers, reference documents, templates, and runtime sources inside its directory. Put repository tooling in `scripts/`, developer documentation in `docs/`, and tests in `tests/<skill-name>/`.
 - Read and write text as UTF-8. Use relative links and resolve runtime resources from the skill's location, independently of the current working directory.
 - Update both README indexes when adding or renaming a skill. Update recipes and references when an API or recipe field changes.
-- Preserve existing copyright and license notices. Document imported components and their license scope in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+- Use the repository's [MIT license](LICENSE) for original code and documentation, and include a copy in each skill. Preserve third-party copyright and license notices; document imported components in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - Do not commit generated artwork, virtual environments, Python caches, or Cargo build output.
 
 ## Local checks

@@ -60,4 +60,4 @@ $oy-pixel 制作一个 32×32 的角色行走动画，导出透明背景 GIF 和
 
 ## 许可证
 
-除另有声明外，本仓库采用 [Apache License 2.0](./LICENSE)。`skills/oy-pixel/` 及其渲染测试 `tests/oy-pixel/` 采用 [MIT 许可证](./skills/oy-pixel/LICENSE)。依赖及分发说明见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。
+本仓库采用 [MIT 许可证](./LICENSE)。第三方依赖的许可证及分发说明见 [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)。
