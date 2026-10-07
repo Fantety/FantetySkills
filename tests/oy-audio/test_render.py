@@ -20,7 +20,8 @@ from sfx import Context, delay, filter_audio, read_wav
 class RenderTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(prefix="sfx-test-")
-        self.root = Path(self.temp.name)
+        # Match renderer paths, including Windows 8.3 aliases and symlinked temp directories.
+        self.root = Path(self.temp.name).resolve()
         self.source = self.root / "source.py"
         self.source.write_text("def build(ctx):\n    ctx.add(ctx.noise() * 0.1)\n", encoding="utf-8")
         self.recipe = dict(version=1, script="source.py", duration=0.15,
