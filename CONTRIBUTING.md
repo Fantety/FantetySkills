@@ -33,6 +33,15 @@ cargo fmt --manifest-path skills/oy-pixel/scripts/engine/Cargo.toml -- --check
 
 The rendering tests check pixels, transparency, timing, output formats, edits to existing images, operation from unrelated working directories, and a standalone skill copy without Cargo on `PATH`. CI runs these checks on Windows and Linux.
 
+For changes to oy-audio's renderer, API, paths, or examples, also run:
+
+```sh
+python skills/oy-audio/scripts/render.py --check
+python tests/oy-audio/test_render.py
+```
+
+Audio tests check deterministic PCM output, duration/channels/levels, loop continuity, source import, tail handling, validation failures, overwrite protection, and a standalone copy invoked from an unrelated directory. CI runs these on Windows and Linux. Audition affected examples when playback is available; numeric checks do not establish sound quality. See [the audio guide](docs/oy-audio.md) for scope and source notes.
+
 ## Updating the bundled renderer
 
 The Windows executable and `scripts/bin/source.sha256` ship with the skill. Keep the fingerprint paired with the engine source it was built from; do not update the fingerprint alone. After changing Rust sources or Cargo dependencies, run `render.py --check` on Windows to rebuild the executable, then run the rendering tests before including the new executable and fingerprint in a release. The renderer automatically builds from source on other platforms when no matching cached executable exists.

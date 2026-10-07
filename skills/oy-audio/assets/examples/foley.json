@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "script": "foley.py",
+  "duration": 2.8,
+  "channels": 1,
+  "seed": 24,
+  "peak_dbfs": -8,
+  "params": {"count": 6, "spacing": 0.42, "center_hz": 850}
+}

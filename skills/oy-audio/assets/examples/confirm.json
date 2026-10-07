@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "script": "confirm.py",
+  "duration": 0.5,
+  "channels": 1,
+  "seed": 12,
+  "peak_dbfs": -10,
+  "params": {"frequency": 660, "interval": 1.3333333333}
+}

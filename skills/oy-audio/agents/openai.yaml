@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sound Effect Generation"
+  short_description: "Generate reproducible sound effects, WAV files, and reports"
+  default_prompt: "Use $oy-audio to create sound effects for my scene and deliver WAV files, editable recipes, and quality analysis."

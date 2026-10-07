@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "script": "impact.py",
+  "duration": 1.4,
+  "channels": 1,
+  "seed": 42,
+  "peak_dbfs": -6,
+  "params": {"weight": 1.0, "brightness": 2200}
+}

@@ -1,4 +1,4 @@
-name: Validate skills and test renderer
+name: Validate skills and test renderers
 
 on:
   push:
@@ -26,6 +26,10 @@ jobs:
         run: python skills/oy-pixel/scripts/render.py --check
       - name: Test rendering and standalone installation
         run: python tests/oy-pixel/test_render.py
+      - name: Check audio renderer
+        run: python skills/oy-audio/scripts/render.py --check
+      - name: Test audio synthesis and standalone installation
+        run: python tests/oy-audio/test_render.py
       - name: Test Rust engine
         run: cargo test --locked --manifest-path skills/oy-pixel/scripts/engine/Cargo.toml
       - name: Check Rust formatting

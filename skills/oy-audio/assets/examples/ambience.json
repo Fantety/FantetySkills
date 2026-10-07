@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "script": "ambience.py",
+  "duration": 4,
+  "channels": 2,
+  "seed": 73,
+  "peak_dbfs": -12,
+  "loop_crossfade_ms": 100,
+  "params": {"motion_hz": 0.25, "brightness": 1800}
+}
