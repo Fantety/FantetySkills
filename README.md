@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./fantety-skills.png" alt="FantetySkills" width="640">
+</p>
+
 # FantetySkills
 
 **简体中文** | [English](./README.en.md)
